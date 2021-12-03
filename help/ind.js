@@ -78,119 +78,138 @@ exports.notNum = (q) => {
 
 exports.listMenu = (time, salam, pushname, prefix) => {
     return `
-*Selamat ${salam} ${pushname}*
-*⌚Time Server : ${time}*
+*Selamat ${salam} ${pushname}*☺
+
+*⌚Waktu Server : ${time}*
 
 
 *MY LIST MENU*
 
 
-🤖 *INFO*
-
--> ${prefix}owner
--> ${prefix}rules
--> ${prefix}donate
-
-
-🧑 *OWNER*
-
-> 
-$ 
--> ${prefix}join link
--> ${prefix}setppbot (tag/send image)
+┌──⭓ *CMD bot*
+│
+│⭔ ${prefix}owner
+│⭔ ${prefix}rules
+│⭔ ${prefix}runtime
+│⭔ ${prefix}join link
+│⭔ ${prefix}donasi
+│
+└───────⭓
 
 
-⚙️ *GROUP*
 
--> ${prefix}revoke
--> ${prefix}leave
--> ${prefix}group open/close
--> ${prefix}tagall text
--> ${prefix}hidetag text
-
-
-😷 *WEEBS*
-
--> ${prefix}anime query
--> ${prefix}manga query
--> ${prefix}character query
--> ${prefix}quotesanime 
--> ${prefix}hentai
+┌──⭓ *CMD owner*
+│
+│⭔ >
+│⭔ $
+│⭔ ${prefix}setppbot (tag/send image)
+│
+└───────⭓
 
 
-🔍 *MISC*
 
--> ${prefix}film query
--> ${prefix}wattpad query
--> ${prefix}webtoons query
--> ${prefix}drakor query
--> ${prefix}pinterest query
-
-
-🎞 *MEDIA*
-
--> ${prefix}toimg (tag sticker)
-
-
-⬇️ *DOWNLOADER* 
-
--> ${prefix}tiktok link
--> ${prefix}ytmp3 link
--> ${prefix}ytmp4 link
--> ${prefix}ytdl link
--> ${prefix}facebook link
--> ${prefix}twitter link
--> ${prefix}instagram link
+┌──⭓ *CMD group*
+│
+│⭔ ${prefix}revoke
+│⭔ ${prefix}leave
+│⭔ ${prefix}group open
+│⭔ ${prefix}group close
+│⭔ ${prefix}tagall text
+│⭔ ${prefix}hidetag text
+│
+└───────⭓
 
 
-📫 *ANIME RANDOM* 
 
--> ${prefix}loli
--> ${prefix}neko
--> ${prefix}waifu
--> ${prefix}shinobu
--> ${prefix}megumin
--> ${prefix}bully
--> ${prefix}cuddle
--> ${prefix}cry
--> ${prefix}hug
--> ${prefix}awoo
--> ${prefix}kiss
--> ${prefix}lick
--> ${prefix}pat
--> ${prefix}smug
--> ${prefix}bonk
--> ${prefix}yeet
--> ${prefix}blush
--> ${prefix}smile
--> ${prefix}wave
--> ${prefix}highfive
--> ${prefix}handhold
--> ${prefix}nom
--> ${prefix}bite
--> ${prefix}glomp
--> ${prefix}slap
--> ${prefix}kill
--> ${prefix}happy
--> ${prefix}wink
--> ${prefix}poke
--> ${prefix}dance
--> ${prefix}cringe
+┌──⭓ *CMD weebs*
+│
+│⭔ ${prefix}anime query
+│⭔ ${prefix}manga query
+│⭔ ${prefix}quotesanime
+│⭔ ${prefix}hentai
+│
+└───────⭓
 
-Kamu Bisa Mensupport
-Bot Dengan Cara Donasi🙏
-Ketik ${prefix}donasi
 
-BASE MD BY
 
-- Rasyid💙
+┌──⭓ *CMD misc*
+│
+│⭔ ${prefix}film query
+│⭔ ${prefix}wattpad query
+│⭔ ${prefix}webtoons query
+│⭔ ${prefix}drakor query
+│⭔ ${prefix}drakor query
+│⭔ ${prefix}pinterest query
+│
+└───────⭓
 
-TQ FOR
 
-- Cahyo🕊
-- Dimas🕊
-- Rio🕊
-    `
+
+┌──⭓ *CMD media*
+│
+│⭔ ${prefix}toimg
+│
+└───────⭓
+
+
+
+┌──⭓ *CMD download*
+│
+│⭔ ${prefix}tiktok link
+│⭔ ${prefix}ytmp3 link
+│⭔ ${prefix}ytmp4 link
+│⭔ ${prefix}facebook link
+│⭔ ${prefix}twitter link
+│⭔ ${prefix}instagram link
+│
+└───────⭓
+
+
+
+┌──⭓ *CMD anime*
+│
+│⭔ ${prefix}loli
+│⭔ ${prefix}neko
+│⭔ ${prefix}waifu
+│⭔ ${prefix}shinobu
+│⭔ ${prefix}megumin
+│⭔ ${prefix}bully
+│⭔ ${prefix}cuddle
+│⭔ ${prefix}cry
+│⭔ ${prefix}hug
+│⭔ ${prefix}awoo
+│⭔ ${prefix}kiss
+│⭔ ${prefix}lick
+│⭔ ${prefix}pat
+│⭔ ${prefix}smug
+│⭔ ${prefix}bonk
+│⭔ ${prefix}yeet
+│⭔ ${prefix}blush
+│⭔ ${prefix}smile
+│⭔ ${prefix}wave
+│⭔ ${prefix}highfive
+│⭔ ${prefix}handhold
+│⭔ ${prefix}nom
+│⭔ ${prefix}bite
+│⭔ ${prefix}glomp
+│⭔ ${prefix}slap
+│⭔ ${prefix}kill
+│⭔ ${prefix}happy
+│⭔ ${prefix}wink
+│⭔ ${prefix}dance
+│⭔ ${prefix}cringe
+│⭔ ${prefix}poke
+│
+└───────⭓
+
+
+Note:
+*Kamu Bisa Mensupport Bot Dengan Cara Berdonasi 😖🙏*
+
+
+_BASE MD BY_
+
+- Rasyid💙`
 }
 
 exports.rules = (prefix) => {
@@ -224,7 +243,7 @@ Sanksi: *‼️ PERMANENT BLOCK ‼️*
 
 Jika sudah dipahami rules-nya, silakan ketik *${prefix}allmenu* untuk memulai!
 
-⚠️ Segala kebijakan dan ketentuan Alphabot di pegang oleh owner dan segala perubahan kebijakan, sewaktu waktu owner berhak mencabut, memblokir user(*﹏*) 
+⚠️ Segala kebijakan dan ketentuan bot di pegang oleh owner dan segala perubahan kebijakan, sewaktu waktu owner berhak mencabut, memblokir user(*﹏*) 
 
 Arigatou Gozaimasu! Untuk kalian user ramah😖🙏
 
