@@ -108,6 +108,16 @@ module.exports = async(chika, msg, m, ind, setting) => {
             return chika.sendMessage(from, { contacts: { displayName: name, contacts: [{ vcard }] }, mentions : men ? men : []},{ quoted: quoted })
         }
 
+const kyun = (s) =>{
+    function pad(s) {
+        return (s < 10 ? '0' : '') + s;
+    }
+    var hours = Math.floor(s / (60 * 60));
+    var minutes = Math.floor(s % (60 * 60) / 60);
+    var seconds = Math.floor(s % 60);
+    return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+};
+
         const sendFileFromUrl = async (from, url, caption, msg, men) => {
             let mime = '';
             let res = await axios.head(url)
@@ -195,9 +205,9 @@ module.exports = async(chika, msg, m, ind, setting) => {
                         {buttonId: `${prefix}rule`, buttonText: {displayText: '📖 Rules Bot' }, type: 1},
                         {buttonId: `${prefix}sc`, buttonText: {displayText: '🤖 Sc Bot' }, type: 1}
                     ]
-                    sendButton('location', from, `Hai kak ${pushname} 👋, saya *${botName}*\n\nBot ini adalah Beta *Multi-Device* Whatsapp. Jika kamu menemukan semacam bug atau kesalahan mohon, Lapor Owner Jika Perlu atau Mendesak 🙏 ` + '\n\n' + ind.listMenu(time, salam, pushname, prefix), buttons)
+                    sendButton('location', from, `Hai kak ${pushname} 👋, saya *${botName}*\n\nBot ini adalah Beta *Baileys Multi-Device* Whatsapp. Mohon Dimaklumi Jika Fitur Masih Sedikit, Kami Lagi Mengembangkan Fitur Sebanyak Mungkin!\nDan Jika kamu menemukan semacam bug atau kesalahan mohon, Lapor Owner Jika Perlu atau Mendesak 🙏\n\n\nBot Telah Aktif Selama:\n*${kyun(process.uptime())}* ` + '\n\n' + ind.listMenu(time, salam, pushname, prefix), buttons)
                } else {
-                   textImg(`Hai kak ${pushname} 👋, saya *${botName}*\n\nBot ini adalah Beta *Multi-Device* Whatsapp. \nJika kamu menemukan semacam bug atau kesalahan mohon, Lapor Owner Jika Perlu atau Mendesak 🙏\n\nKetik *${prefix}allmenu* untuk melihat list fitur bot`)
+                   textImg(`Hai kak ${pushname} 👋, saya *${botName}*\n\nBot ini adalah Beta *Baileys Multi-Device* Whatsapp. Mohon Dimaklumi Jika Fitur Masih Sedikit, Kami Lagi Mengembangkan Fitur Sebanyak Mungkin!\nDan Jika kamu menemukan semacam bug atau kesalahan mohon, Lapor Owner Jika Perlu atau Mendesak 🙏\n\n\nBot Telah Aktif Selama:\n*${kyun(process.uptime())}*\n\nKetik *${prefix}allmenu* untuk melihat list fitur bot`)
                 }
             }
             break
@@ -211,6 +221,9 @@ module.exports = async(chika, msg, m, ind, setting) => {
             }
             break
             // Owner
+            case prefix+'runtime':
+  reply(`*Runtime* : ${kyun(process.uptime())}`)
+  break
             case prefix+'join': case prefix+'joingc': {
                 if (!isOwner && !fromMe) return reply(ind.ownerOnly())
                 if (!q) return textImg(ind.wrongFormat(prefix))
