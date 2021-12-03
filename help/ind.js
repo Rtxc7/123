@@ -177,6 +177,9 @@ $
 -> ${prefix}dance
 -> ${prefix}cringe
 
+Kamu Bisa Mensupport
+Bot Dengan Cara Donasi🙏
+Ketik ${prefix}donasi
 
 BASE MD BY
 
@@ -223,8 +226,7 @@ Jika sudah dipahami rules-nya, silakan ketik *${prefix}allmenu* untuk memulai!
 
 ⚠️ Segala kebijakan dan ketentuan Alphabot di pegang oleh owner dan segala perubahan kebijakan, sewaktu waktu owner berhak mencabut, memblokir user(*﹏*) 
 
-Arigatou Gozaimasu! Untuk kalian user ramah dan Beberapa orang yg ikut membantu juga dalam project pembuatan Alphabot
-😖🙏
+Arigatou Gozaimasu! Untuk kalian user ramah😖🙏
 
 
     `
@@ -233,7 +235,7 @@ exports.source = (prefix) =>{
 return`*── 「 SOURCE 」 ──*
 
 Original : https://github.com/rashidsiregar28/chikabot
-Sc Recode : https://github.com/zeeoneofc/Alphabot-Md
+Recode By: Riu
 `
 }
 exports.tos = (ownerNumber, prefix) => {
@@ -242,7 +244,7 @@ exports.tos = (ownerNumber, prefix) => {
 
 Hai 👋
 Kalian bisa mendukung saya agar bot ini tetap up to date dengan:
-🏧 0887435047326 (OVO/Dana/GoPay)
+🏧 081462239208 ( Pulsa )
 
 Berapapun donasi kalian akan sangat berarti 👍
 
