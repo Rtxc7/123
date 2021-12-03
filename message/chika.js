@@ -192,7 +192,8 @@ module.exports = async(chika, msg, m, ind, setting) => {
                 if (isGroup) {
                     let buttons = [
                         {buttonId: `${prefix}owner`, buttonText: {displayText: '👨‍💻 Owner Bot'}, type: 1},
-                        {buttonId: `${prefix}rule`, buttonText: {displayText: '📖 Rules Bot' }, type: 1}
+                        {buttonId: `${prefix}rule`, buttonText: {displayText: '📖 Rules Bot' }, type: 1},
+                        {buttonId: `${prefix}sc`, buttonText: {displayText: '🤖 Sc Bot' }, type: 1}
                     ]
                     sendButton('location', from, `Hai kak ${pushname} 👋, saya *${botName}*\n\nBot ini adalah Beta *Multi-Device* Whatsapp. Jika kamu menemukan semacam bug atau kesalahan mohon, Lapor Owner Jika Perlu atau Mendesak 🙏 ` + '\n\n' + ind.listMenu(time, salam, pushname, prefix), buttons)
                } else {
