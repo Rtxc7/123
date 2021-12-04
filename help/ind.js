@@ -7,9 +7,7 @@ exports.ok = () => {
 }
 
 exports.err = () => {
-    return `‼️Fitur Sedang Error‼️
-
-⏳Sedang melapor bug fitur ke owner-sama⏳`
+    return `🙏JUDUL TIDAK DITEMUKAN🙏`
 }
 
 exports.wrongFormat = (prefix) => {
@@ -136,7 +134,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 │
 │⭔ ${prefix}film query
 │⭔ ${prefix}wattpad query
-│⭔ ${prefix}webtoons query
+│⭔ ${prefix}webtoon query
 │⭔ ${prefix}drakor query
 │⭔ ${prefix}drakor query
 │⭔ ${prefix}pinterest query
