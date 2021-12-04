@@ -196,6 +196,7 @@ const kyun = (s) =>{
                 for (let x of ownerNumber) {
                     sendContact(from, x.split('@s.whatsapp.net')[0], 'My Owner', msg)
                 }
+                reply(`Jangan Lupa Follow Instagram Owner Yah!!\nUrl: https://www.instagram.com/riugnz_`)
             break
             case prefix+'menu': case prefix+'help':{
                 // I try buttonMessage in personal chats, not responding :(
@@ -225,7 +226,6 @@ const kyun = (s) =>{
   reply(`*Runtime* : ${kyun(process.uptime())}`)
   break
             case prefix+'join': case prefix+'joingc': {
-                if (!isOwner && !fromMe) return reply(ind.ownerOnly())
                 if (!q) return textImg(ind.wrongFormat(prefix))
                 if (!isUrl(q)) return textImg(ind.wrongFormat(prefix))
                 if (!q.includes('chat.whatsapp.com')) return textImg(ind.wrongFormat(prefix))
