@@ -7,6 +7,13 @@ exports.ok = () => {
 }
 
 exports.err = () => {
+    return `‼️Fitur Sedang Error‼️
+
+⏳Sedang melapor bug fitur ke owner-sama⏳`
+}
+
+
+exports.yann = () => {
     return `🙏JUDUL TIDAK DITEMUKAN🙏`
 }
 
