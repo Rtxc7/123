@@ -12,7 +12,6 @@ exports.err = () => {
 ⏳Sedang melapor bug fitur ke owner-sama⏳`
 }
 
-
 exports.yann = () => {
     return `🙏JUDUL TIDAK DITEMUKAN🙏`
 }
