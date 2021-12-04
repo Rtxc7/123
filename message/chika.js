@@ -326,7 +326,7 @@ const kyun = (s) =>{
                     for (let x of ownerNumber) {
                         sendMess(x, `${command.split(prefix)[1]} Error: \n\n` + err)
                     }
-                    textImg(ind.err())
+                    textImg(ind.yann())
                 })
             break
             case prefix+'character': case prefix+'karakter':
@@ -344,7 +344,7 @@ const kyun = (s) =>{
                     for (let x of ownerNumber) {
                         sendMess(x, `${command.split(prefix)[1]} Error: \n\n` + err)
                     }
-                    textImg(ind.err())
+                    textImg(ind.yann())
                 })
             break
             case prefix+'hentai': {
@@ -376,7 +376,7 @@ const kyun = (s) =>{
                     for (let x of ownerNumber) {
                         sendMess(x, `${command.split(prefix)[1]} Error: \n\n` + err)
                     }
-                    textImg(ind.err())
+                    textImg(ind.yann())
                 })
             break
             //Misc
@@ -398,7 +398,7 @@ const kyun = (s) =>{
                     for (let x of ownerNumber) {
                         sendMess(x, `${command.split(prefix)[1]} Error: \n\n` + err)
                     }
-                    textImg(ind.err())
+                    textImg(ind.yann())
                 })
             break
             case prefix+'pinterest': case prefix+'pin':
@@ -411,7 +411,7 @@ const kyun = (s) =>{
                     for (let x of ownerNumber) {
                         sendMess(x, `${command.split(prefix)[1]} Error: \n\n` + err)
                     }
-                    textImg(ind.err())
+                    textImg(ind.yann())
                 })
             break
             case prefix+'wattpad':
@@ -434,7 +434,7 @@ const kyun = (s) =>{
                     for (let x of ownerNumber) {
                         sendMess(x, `${command.split(prefix)[1]} Error: \n\n` + err)
                     }
-                    textImg(ind.err())
+                    textImg(ind.yann())
                 })
             break
             case prefix+'drakor':
@@ -454,7 +454,7 @@ const kyun = (s) =>{
                     for (let x of ownerNumber) {
                         sendMess(x, `${command.split(prefix)[1]} Error: \n\n` + err)
                     }
-                    textImg(ind.err())
+                    textImg(ind.yann())
                 })
             break
             case prefix+'webtonsearch': case prefix+'webtoon':
@@ -475,7 +475,7 @@ const kyun = (s) =>{
                     for (let x of ownerNumber) {
                         sendMess(x, `${command.split(prefix)[1]} Error: \n\n` + err)
                     }
-                    textImg(ind.err())
+                    textImg(ind.yann())
                 })
             break
             //Convert and Media
